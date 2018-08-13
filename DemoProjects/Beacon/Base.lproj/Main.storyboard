@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9GH-vJ-N4o">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="f0M-U4-4JB">
+            <objects>
+                <navigationController id="9GH-vJ-N4o" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pN3-NT-reL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OcB-dh-OMo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n65-Lr-jvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1047" y="-350"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T4p-kw-osG"/>
+                        <viewControllerLayoutGuide type="bottom" id="hZS-yE-am7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8U-Qj-wm4">
+                                <rect key="frame" x="10" y="114" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PyR-gd-ffh"/>
+                                </constraints>
+                                <state key="normal" title="点击开始扫描"/>
+                                <connections>
+                                    <action selector="clickStartBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EKq-Ol-xlT"/>
+                                    <segue destination="p5r-7r-zd5" kind="show" id="cML-Fu-taC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBJ-6r-R0n">
+                                <rect key="frame" x="10" y="174" width="355" height="30"/>
+                                <state key="normal" title="手机作为iBeacon"/>
+                                <connections>
+                                    <action selector="clickAsBeaconBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Lt-Ve-z1y"/>
+                                    <segue destination="5dy-tf-WTo" kind="show" id="bES-OV-hdE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XBJ-6r-R0n" firstAttribute="trailing" secondItem="f8U-Qj-wm4" secondAttribute="trailing" id="2mO-Fu-dLk"/>
+                            <constraint firstItem="f8U-Qj-wm4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="5HG-yQ-W7G"/>
+                            <constraint firstItem="XBJ-6r-R0n" firstAttribute="height" secondItem="f8U-Qj-wm4" secondAttribute="height" id="6Fj-vT-X8F"/>
+                            <constraint firstItem="XBJ-6r-R0n" firstAttribute="top" secondItem="f8U-Qj-wm4" secondAttribute="bottom" constant="30" id="9oT-1H-SCI"/>
+                            <constraint firstItem="f8U-Qj-wm4" firstAttribute="top" secondItem="T4p-kw-osG" secondAttribute="bottom" constant="50" id="Fae-Gw-pO9"/>
+                            <constraint firstItem="XBJ-6r-R0n" firstAttribute="leading" secondItem="f8U-Qj-wm4" secondAttribute="leading" id="kRE-Fy-U9V"/>
+                            <constraint firstAttribute="trailing" secondItem="f8U-Qj-wm4" secondAttribute="trailing" constant="10" id="sE0-zX-GKI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1eo-hO-6bM"/>
+                    <connections>
+                        <outlet property="asBeaconBtn" destination="XBJ-6r-R0n" id="3qP-Ls-bQV"/>
+                        <outlet property="startBtn" destination="f8U-Qj-wm4" id="ZA6-o0-cnE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-271" y="-358"/>
+        </scene>
+        <!--Scan View Controller-->
+        <scene sceneID="zHM-pO-lpg">
+            <objects>
+                <viewController id="p5r-7r-zd5" customClass="ScanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fDR-Yx-LmA"/>
+                        <viewControllerLayoutGuide type="bottom" id="0iz-jf-uQG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="md1-xl-BcO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNz-2b-ujZ">
+                                <rect key="frame" x="137" y="106" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DVH-ZY-CdN"/>
+                                    <constraint firstAttribute="height" constant="30" id="HMb-Sa-fAK"/>
+                                </constraints>
+                                <state key="normal" title="扫描"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z1x-h2-vSy">
+                                <rect key="frame" x="0.0" y="192" width="375" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0iz-jf-uQG" firstAttribute="top" secondItem="Z1x-h2-vSy" secondAttribute="bottom" constant="20" id="Efe-ZQ-4V3"/>
+                            <constraint firstItem="Z1x-h2-vSy" firstAttribute="top" secondItem="zNz-2b-ujZ" secondAttribute="bottom" constant="56" id="JCe-iL-A8a"/>
+                            <constraint firstItem="zNz-2b-ujZ" firstAttribute="top" secondItem="fDR-Yx-LmA" secondAttribute="bottom" constant="42" id="aHy-do-0Vy"/>
+                            <constraint firstItem="zNz-2b-ujZ" firstAttribute="centerX" secondItem="md1-xl-BcO" secondAttribute="centerX" id="euW-Uu-1Uc"/>
+                            <constraint firstItem="Z1x-h2-vSy" firstAttribute="leading" secondItem="md1-xl-BcO" secondAttribute="leading" id="i0c-wa-bTD"/>
+                            <constraint firstAttribute="trailing" secondItem="Z1x-h2-vSy" secondAttribute="trailing" id="rQs-Xv-Nc6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logView" destination="Z1x-h2-vSy" id="JqV-If-YTz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZTe-Nc-BU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-271.19999999999999" y="438.53073463268368"/>
+        </scene>
+        <!--Beacon View Controller-->
+        <scene sceneID="z6c-y7-xMh">
+            <objects>
+                <viewController id="5dy-tf-WTo" customClass="BeaconViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Emp-eU-3fd"/>
+                        <viewControllerLayoutGuide type="bottom" id="HGk-AO-8tg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VAX-XA-deU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCf-Ip-Jve">
+                                <rect key="frame" x="26" y="114" width="323" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7r6-Qm-I0M"/>
+                                </constraints>
+                                <state key="normal" title="模拟beacon设备"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BCf-Ip-Jve" firstAttribute="top" secondItem="Emp-eU-3fd" secondAttribute="bottom" constant="50" id="D3h-ru-esG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BCf-Ip-Jve" secondAttribute="trailing" constant="10" id="DF9-8b-ScF"/>
+                            <constraint firstItem="BCf-Ip-Jve" firstAttribute="leading" secondItem="VAX-XA-deU" secondAttribute="leadingMargin" constant="10" id="GW5-wk-Waz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VeY-fa-bVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="-352"/>
+        </scene>
+    </scenes>
+</document>
