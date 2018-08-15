@@ -24,6 +24,13 @@
 		FE076963211AE386004ABC5A /* PeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE076962211AE386004ABC5A /* PeripheralViewController.m */; };
 		FE076966211AE3A6004ABC5A /* CentralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE076965211AE3A6004ABC5A /* CentralViewController.m */; };
 		FE0769C3211B043D004ABC5A /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0769C2211B043D004ABC5A /* ScanViewController.m */; };
+		FE0769FD2122D186004ABC5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0769FC2122D186004ABC5A /* AppDelegate.m */; };
+		FE076A002122D186004ABC5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0769FF2122D186004ABC5A /* ViewController.m */; };
+		FE076A032122D186004ABC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE076A012122D186004ABC5A /* Main.storyboard */; };
+		FE076A052122D189004ABC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE076A042122D189004ABC5A /* Assets.xcassets */; };
+		FE076A082122D189004ABC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE076A062122D189004ABC5A /* LaunchScreen.storyboard */; };
+		FE076A0B2122D189004ABC5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE076A0A2122D189004ABC5A /* main.m */; };
+		FE076A112122D1B5004ABC5A /* TextFieldInputDate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE076A102122D1B5004ABC5A /* TextFieldInputDate.m */; };
 		FE23999020456EEA00987D61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE23998F20456EEA00987D61 /* AppDelegate.m */; };
 		FE23999320456EEA00987D61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE23999220456EEA00987D61 /* ViewController.m */; };
 		FE23999620456EEA00987D61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE23999420456EEA00987D61 /* Main.storyboard */; };
@@ -76,6 +83,18 @@
 		FE076965211AE3A6004ABC5A /* CentralViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CentralViewController.m; sourceTree = "<group>"; };
 		FE0769C1211B043D004ABC5A /* ScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
 		FE0769C2211B043D004ABC5A /* ScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		FE0769F92122D186004ABC5A /* TextFieldInputDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldInputDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0769FB2122D186004ABC5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE0769FC2122D186004ABC5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE0769FE2122D186004ABC5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FE0769FF2122D186004ABC5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FE076A022122D186004ABC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE076A042122D189004ABC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE076A072122D189004ABC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE076A092122D189004ABC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE076A0A2122D189004ABC5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE076A0F2122D1B5004ABC5A /* TextFieldInputDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldInputDate.h; sourceTree = "<group>"; };
+		FE076A102122D1B5004ABC5A /* TextFieldInputDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldInputDate.m; sourceTree = "<group>"; };
 		FE23998B20456EEA00987D61 /* DemoProjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE23998E20456EEA00987D61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FE23998F20456EEA00987D61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +143,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE06DD37211AD47B00257852 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0769F62122D186004ABC5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +226,24 @@
 			path = BeaconMac;
 			sourceTree = "<group>";
 		};
+		FE0769FA2122D186004ABC5A /* TextFieldInputDate */ = {
+			isa = PBXGroup;
+			children = (
+				FE0769FB2122D186004ABC5A /* AppDelegate.h */,
+				FE0769FC2122D186004ABC5A /* AppDelegate.m */,
+				FE0769FE2122D186004ABC5A /* ViewController.h */,
+				FE0769FF2122D186004ABC5A /* ViewController.m */,
+				FE076A0F2122D1B5004ABC5A /* TextFieldInputDate.h */,
+				FE076A102122D1B5004ABC5A /* TextFieldInputDate.m */,
+				FE076A012122D186004ABC5A /* Main.storyboard */,
+				FE076A042122D189004ABC5A /* Assets.xcassets */,
+				FE076A062122D189004ABC5A /* LaunchScreen.storyboard */,
+				FE076A092122D189004ABC5A /* Info.plist */,
+				FE076A0A2122D189004ABC5A /* main.m */,
+			);
+			path = TextFieldInputDate;
+			sourceTree = "<group>";
+		};
 		FE23998220456EEA00987D61 = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +252,7 @@
 				FEA1A412204FC6F9008BE31E /* CADisplayLink */,
 				FE06DCFF2119926E00257852 /* Beacon */,
 				FE06DD23211AC7AA00257852 /* BeaconMac */,
+				FE0769FA2122D186004ABC5A /* TextFieldInputDate */,
 				FE23998C20456EEA00987D61 /* Products */,
 				FE06DD142119935E00257852 /* Frameworks */,
 			);
@@ -221,6 +266,7 @@
 				FEA1A411204FC6F9008BE31E /* CADisplayLink.app */,
 				FE06DCFE2119926E00257852 /* Beacon.app */,
 				FE06DD22211AC7AA00257852 /* BeaconMac.app */,
+				FE0769F92122D186004ABC5A /* TextFieldInputDate.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -320,6 +366,23 @@
 			productReference = FE06DD22211AC7AA00257852 /* BeaconMac.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FE0769F82122D186004ABC5A /* TextFieldInputDate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE076A0E2122D189004ABC5A /* Build configuration list for PBXNativeTarget "TextFieldInputDate" */;
+			buildPhases = (
+				FE0769F52122D186004ABC5A /* Sources */,
+				FE0769F62122D186004ABC5A /* Frameworks */,
+				FE0769F72122D186004ABC5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldInputDate;
+			productName = TextFieldInputDate;
+			productReference = FE0769F92122D186004ABC5A /* TextFieldInputDate.app */;
+			productType = "com.apple.product-type.application";
+		};
 		FE23998A20456EEA00987D61 /* DemoProjects */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE2399A120456EEA00987D61 /* Build configuration list for PBXNativeTarget "DemoProjects" */;
@@ -393,6 +456,10 @@
 							};
 						};
 					};
+					FE0769F82122D186004ABC5A = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+					};
 					FE23998A20456EEA00987D61 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -425,6 +492,7 @@
 				FEA1A410204FC6F9008BE31E /* CADisplayLink */,
 				FE06DCFD2119926E00257852 /* Beacon */,
 				FE06DD21211AC7AA00257852 /* BeaconMac */,
+				FE0769F82122D186004ABC5A /* TextFieldInputDate */,
 			);
 		};
 /* End PBXProject section */
@@ -446,6 +514,16 @@
 			files = (
 				FE06DD2B211AC7AB00257852 /* Assets.xcassets in Resources */,
 				FE06DD2E211AC7AC00257852 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0769F72122D186004ABC5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE076A082122D189004ABC5A /* LaunchScreen.storyboard in Resources */,
+				FE076A052122D189004ABC5A /* Assets.xcassets in Resources */,
+				FE076A032122D186004ABC5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +584,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE0769F52122D186004ABC5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE076A002122D186004ABC5A /* ViewController.m in Sources */,
+				FE076A0B2122D189004ABC5A /* main.m in Sources */,
+				FE076A112122D1B5004ABC5A /* TextFieldInputDate.m in Sources */,
+				FE0769FD2122D186004ABC5A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE23998720456EEA00987D61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -562,6 +651,22 @@
 				FE06DD2D211AC7AC00257852 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE076A012122D186004ABC5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE076A022122D186004ABC5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE076A062122D189004ABC5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE076A072122D189004ABC5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		FE23999420456EEA00987D61 /* Main.storyboard */ = {
@@ -690,6 +795,42 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dly.BeaconMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FE076A0C2122D189004ABC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R7JK4K8BX9;
+				INFOPLIST_FILE = TextFieldInputDate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dly.TextFieldInputDate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE076A0D2122D189004ABC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R7JK4K8BX9;
+				INFOPLIST_FILE = TextFieldInputDate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dly.TextFieldInputDate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -902,6 +1043,15 @@
 			buildConfigurations = (
 				FE06DD34211AC7AC00257852 /* Debug */,
 				FE06DD35211AC7AC00257852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE076A0E2122D189004ABC5A /* Build configuration list for PBXNativeTarget "TextFieldInputDate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE076A0C2122D189004ABC5A /* Debug */,
+				FE076A0D2122D189004ABC5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

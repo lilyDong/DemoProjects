@@ -26,8 +26,8 @@
 }
 
 - (void) beaconInit{
-    self.defaultUUID = @"0BC1D8B7-1B07-48B6-B148-85ECBE6412A2";
-    self.defaultUUID = @"FDA50693-A4E2-4FB1-AFCF-C6EB07647825";
+//    self.defaultUUID = @"0BC1D8B7-1B07-48B6-B148-85ECBE6412A2";
+    self.defaultUUID = @"883D7271-8BDF-44AD-85E0-42382AEBB5E5";
 }
 
 -(void)addLog:(NSString *) log {
